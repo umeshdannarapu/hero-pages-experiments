@@ -17,7 +17,7 @@ export default function Page2() {
         <div className="absolute -bottom-10 -left-1 h-[80px] w-[600px] -rotate-8 bg-[#0B0B0B]" />
       </div>
 
-      <div className="flex h-full w-full flex-col items-center overflow-hidden rounded-[32px] border-[1.5px] border-white/10 bg-[#2B2B2B8A] text-center backdrop-blur-[100px]">
+      <div className="flex relative h-full w-full flex-col items-center overflow-hidden rounded-[32px] border-[1.5px] border-white/10 bg-[#2B2B2B8A] text-center backdrop-blur-[100px]">
         {/* Navbar */}
         <div className="flex w-full justify-between px-8 py-6">
           <div className="flex gap-1.5">
@@ -44,10 +44,32 @@ export default function Page2() {
             Stop wasting time on repetitive tasks.
           </p>
         </div>
-        <button className="py-4 px-5 bg-[#7CFF36] rounded-full text-black shadow-[0_0_28px_88px_rgba(0,0,0,0.25),inset_0_0_12px_0_rgba(255,255,255,0.25)]">
-          Request Access
-        </button>
+        <div className="flex flex-col gap-3 justify-center h-fit ">
+          <button className="py-4 px-5 bg-[#7CFF36] rounded-full text-black font-medium text-[16px] tracking-[-4%] font-euclid shadow-[0_28px_88px_0_rgba(122,255,54,0.51),0_120px_88px_0_rgba(122,255,54,0.51)]">
+            Request Access
+          </button>
+          <p className="text-white/30 text-[14px] font-euclid tracking-[-4%] pb-11">
+            Get 3 month free now
+          </p>
+        </div>
+        {/* Left Dashboard*/}
+        <div className="bg-gradient-to-l from-transparent via-red to-red absolute -bottom-16  shadow-[0_-20px_32px_0_rgba(0,0,0,0.25)] -rotate-6 -left-100 bg-transparent  scale-[0.5] p-2 rounded-[24px] bg-white/2 shadow-[inset_0_2px_4px_0_rgba(225,255,255,0.2)]">
+          <img
+            src="page2-dashboard.svg"
+            alt="Dashboard"
+            className="rounded-[16px] shadow-[0_20px_32px_0_rgba(0,0,0,0.25)]"
+          />
+        </div>
+        {/* Center Dashboard*/}
+        <div className="p-2 rounded-[24px] bg-white/2 shadow-[inset_0_2px_4px_0_rgba(225,255,255,0.2)]">
+          <img
+            src="page2-dashboard.svg"
+            alt="Dashboard"
+            className="rounded-[16px]"
+          />
+        </div>
       </div>
+      <div className="h-[60px] w-full"></div>
     </div>
   );
 }
